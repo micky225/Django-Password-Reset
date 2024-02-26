@@ -150,7 +150,7 @@ def verify_email_view(request, email):
                 user = User.objects.get(email=email)
                 login(request, user)
                 messages.success(request, "Login successful")
-                return redirect('user_account:verify_email',) 
+                return redirect('user_account:home',)
             except:
                 messages.error(request, "Verification failed! Please check your mail to provide a correct code")
         else:
