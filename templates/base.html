@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SPARKER - Premium directory and listings template by Ansonika.">
+    <meta name="author" content="Ansonika">
+    <title>Documents | Acoounts</title>
+
+    <!-- Favicons-->
+    
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- BASE CSS -->
+	<link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "css/style.css" %}" rel="stylesheet">
+	<link href="{% static "css/vendors.css" %}" rel="stylesheet">
+
+	<!-- ALTERNATIVE COLORS CSS -->
+	<link href="#" id="colors" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="{% static "css/custom.css" %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+			
+
+	<!-- /header -->
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+    {% block content %}{% endblock content %}
+
+	
+	
+	<!-- COMMON SCRIPTS -->
+    <script src="{% static "js/common_scripts.js" %}"></script>
+	<script src="{% static "js/functions.js" %}"></script>
+	<script src="{% static "js/validate.js" %}"></script>
+	<script src="{% static "js/pw_strenght.js" %}"></script>
+
+
+
+  
+</body>
+
+</html>
