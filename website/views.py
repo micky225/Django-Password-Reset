@@ -11,6 +11,7 @@ from django.utils.translation import gettext_lazy as _
 from .models import UserEmailVerification
 from django.contrib.auth import authenticate, login, logout
 from .utils import send_raw_email
+from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth import get_user_model
 # Create your views here.
 User = get_user_model()
@@ -19,7 +20,7 @@ def home(request):
     return render(request, 'index.html')
 
 
-
+@csrf_exempt
 def register_view(request):
     form = RegistrationForm()
     if request.method == "POST":

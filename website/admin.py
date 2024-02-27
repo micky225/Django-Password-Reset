@@ -6,7 +6,8 @@ from .models import UserEmailVerification
 
 User = get_user_model()
 
-
+admin.site.site_header = "User_Password_Reset"
+admin.site.site_title = "User_Password_Reset"
 
 # Model List
 class UserEmailVerificationAdmin(admin.ModelAdmin):
